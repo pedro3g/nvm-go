@@ -1,10 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/pedro3g/nvm-go/handlers"
 )
 
 func main() {
-	fmt.Println(os.Args)
+	mainArg := os.Args[1]
+
+	if mainArg == "list" {
+		handlers.List()
+	}
 }

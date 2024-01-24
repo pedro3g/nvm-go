@@ -10,6 +10,6 @@ func TestGetBaseDir(t *testing.T) {
 	_, err := utils.GetBaseDir()
 
 	if err != nil {
-		t.Errorf("Expect a base dir, got %v", err)
+		t.Errorf("Expect for the NVM_GO variable to exist. %f", err)
 	}
 }
